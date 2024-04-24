@@ -1,0 +1,166 @@
+.aceconference-account-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.aceconference-account-container::after {
+    content: '';
+    background-image: url(../images/login/login-bgimage.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    mix-blend-mode: luminosity;
+}
+
+.aceconference-account-container.login-container {
+    justify-content: start;
+    height: 95vh
+}
+
+.aceconference-account-container .account-formcontainer {
+    width: 80%;
+    padding: 32px 20px;
+    background-color: white;
+}
+
+.aceconference-account-container .account-formcontainer>h2 {
+    color: var(--mainpink);
+    font-size: var(--body20);
+    font-family: 'PT Sans', sans-serif;
+}
+
+.aceconference-account-container .account-formcontainer>p,
+.aceconference-account-container .account-formcontainer>p>a {
+    color: var(--maingray);
+    font-size: var(--body12);
+    font-family: 'Lato', sans-serif;
+}
+
+.account-formcontainer .account-form {
+    padding-top: 26px;
+}
+
+.account-formcontainer .account-form input {
+    padding: 10px;
+    border: 1px solid #F1F0F0;
+    background: #FFF;
+}
+
+.account-formcontainer .account-form label.position-absolute {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #65656599;
+    cursor: auto;
+}
+
+.account-formcontainer .account-form label.position-absolute,
+.account-formcontainer .account-form input,
+.account-formcontainer .account-form input::placeholder,
+.account-formcontainer .account-form label.radio-label {
+    font-size: var(--body14);
+    font-family: 'Lato', sans-serif;
+    color: rgba(101, 101, 101, 0.60);
+    font-weight: 400;
+}
+
+.account-formcontainer .account-form input[type='number']::-webkit-inner-spin-button,
+.account-formcontainer .account-form input[type='number']::-webkit-outer-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.account-formcontainer .account-form .form-label {
+    color: var(--maindark);
+    font-size: var(--body16);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    padding-bottom: 8px;
+    display: block;
+}
+
+.account-formcontainer .account-form img.position-absolute {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.account-formcontainer .account-form button {
+    font-size: var(--body14);
+    font-family: 'PT Sans', sans-serif;
+}
+
+.account-form .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.account-form .row>div:first-child {
+    padding-left: 0;
+}
+
+.account-form .row>div:last-child {
+    padding-right: 0;
+}
+
+.account-form .error-text {
+    font-size: var(--body14);
+    padding-top: 8px;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+
+/* Media Query Start */
+@media (max-width: 991px) {
+
+    .account-form .row,
+    .account-form .row>div {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .account-form .row>div:first-child {
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+@media (min-width: 640px) {
+    .aceconference-account-container.login-container .account-formcontainer {
+        width: 450px;
+    }
+}
+
+@media (min-width: 768px) {
+    .aceconference-account-container .account-formcontainer {
+        width: 700px;
+    }
+
+    .aceconference-account-container .account-formcontainer {
+        padding: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .aceconference-account-container {
+        padding: 120px 0;
+    }
+
+    .aceconference-account-container .account-formcontainer {
+        width: 900px;
+    }
+}

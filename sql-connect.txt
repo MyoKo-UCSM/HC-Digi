@@ -1,0 +1,47 @@
+need to install or enable the pdo_sqlsrv and sqlsrv extensions.
+
+
+extension=php_pdo_sqlsrv_XX.dll
+extension=php_sqlsrv_XX.dll
+extension=php_pdo_sqlsrv_81_nts_x64.dll
+extension=php_pdo_sqlsrv_82_nts_x64.dll
+extension=php_sqlsrv_83_nts_x86.dll
+extension=php_sqlsrv_82_nts_x86.dll
+
+env
+========
+DB_CONNECTION=sqlsrv
+DB_HOST=your_sql_server_host
+DB_PORT=your_sql_server_port (usually 1433)
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
+
+run
+======
+composer require doctrine/dbal
+composer require illuminate/database
+
+database.php
+=========
+'sqlsrv' => [
+    'driver' => 'sqlsrv',
+    'host' => env('DB_HOST', 'localhost'),
+    'port' => env('DB_PORT', '1433'),
+    'database' => env('DB_DATABASE', ''),
+    'username' => env('DB_USERNAME', ''),
+    'password' => env('DB_PASSWORD', ''),
+    'charset' => 'utf8',
+    'prefix' => '',
+]
+
+php_pdo_sqlsrv_82_nts_x86
+
+
+
+IDT team သို့ပေး‌ပို့ပါ ။ စစ်ဆေးပြီး၊ ပြန်လည်ဖြေကြားပေးပါမယ်။
+
+Please give us to IDT team by via Viber. They will inform you.
+
+
+IDT team သို့ Viber မှတဆင့် ပို့ပေး‌ပါ။ IDT team မှ စစ်ဆေးပြီး အကြောင်းပြန်ပေးပါမည်။
